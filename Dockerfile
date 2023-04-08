@@ -16,6 +16,8 @@ COPY . .
 # Expone el puerto en el que se ejecutará la aplicación
 EXPOSE 5001
 
+VOLUME ["/app/instance"]
+
 # Define la variable de entorno para Flask
 ENV FLASK_APP=app.py
 
