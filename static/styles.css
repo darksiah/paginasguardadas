@@ -1,0 +1,112 @@
+body {
+  background-color: #000;
+  overflow: auto;
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.planet {
+  position: absolute;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+.star.twinkle {
+  animation: twinkle 1s infinite alternate;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.planet.red {
+  background-color: #f44336;
+}
+
+.planet.blue {
+  background-color: #2196f3;
+}
+
+.planet.green {
+  background-color: #4caf50;
+}
+
+.planet.yellow {
+  background-color: #ffeb3b;
+}
+
+.planet.purple {
+  background-color: #9c27b0;
+}
+
+
+.star,
+.planet,
+.orbit {
+  z-index: -1;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 1;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+
+td:first-child {
+  width: 20%;
+  text-align: center;
+}
+
+td:last-child {
+  width: 20%;
+  text-align: right;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.container {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
