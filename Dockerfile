@@ -20,4 +20,5 @@ EXPOSE 5001
 ENV FLASK_APP=app.py
 
 # Ejecuta la aplicación de Flask
-CMD ["flask", "run", "--host", "0.0.0.0"]
+#CMD ["flask", "run", "--host", "0.0.0.0"]
+CMD ["python", "app.py",]
